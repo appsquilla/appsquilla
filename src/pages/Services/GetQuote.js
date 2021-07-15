@@ -3,6 +3,7 @@ import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import './GetQuote.css'
 import {Container, FormLabel, Form, FormControl, FormGroup} from 'react-bootstrap'
+require('dotenv').config();
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 init("user_a3p6omOmNTYt2qSwgeCVr");
@@ -71,7 +72,7 @@ function GetQuote() {
 
     function askQuotation(event) {
         
-        emailjs.send('service_1igi13s', 'qtemplate_lvhltbc', templateParams)
+        emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams)
         .then(function(response) {
            console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
