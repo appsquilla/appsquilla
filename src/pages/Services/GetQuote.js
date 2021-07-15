@@ -3,7 +3,6 @@ import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import './GetQuote.css'
 import {Container, FormLabel, Form, FormControl, FormGroup} from 'react-bootstrap'
-require('dotenv').config();
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 init("user_a3p6omOmNTYt2qSwgeCVr");
