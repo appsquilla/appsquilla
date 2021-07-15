@@ -1,7 +1,7 @@
 {
   "name": "appsquilla",
   "version": "0.2.1",
-  "homepage": "https://appsquilla.github.io/appsquilla2021",
+  "homepage": "https://appsquilla.github.io/appsquilla",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
